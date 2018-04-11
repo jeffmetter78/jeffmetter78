@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
 <title>Hello, AMPs</title>
 <link rel="canonical" href="https://www.jeffmetter78.com">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -31,7 +32,17 @@ h1 {
 </head>
 <body>
 <h1>Welcome to the mobile web</h1>
-<amp-img src="https://www.gravatar.com/avatar/fdd4ee39e3951d587a97d95346825c0a?s=1000&r=pg" width="1000" height="1000" layout="responsive" alt="Jeff Metter"></amp-img>
+
+<amp-list width="auto"
+  height="100"
+  layout="fixed-height"
+  src="https://www.jeffmetter78.com/amp-list-urls.json">
+  <template type="amp-mustache">
+    <div class="url-entry">
+      <a href="{{url}}">{{title}}</a>
+    </div>
+  </template>
+</amp-list>
 
 
 </body>
