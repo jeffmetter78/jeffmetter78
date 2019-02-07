@@ -1,0 +1,3 @@
+url: "https://www.jeffmetter78.com" # the base hostname & protocol for your site, e.g. http://example.com
+plugins:
+  - jekyll-redirect-from
